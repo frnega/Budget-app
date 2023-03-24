@@ -60,7 +60,9 @@
 <!-- Features -->
 
 ### Live Demo
-Here is our [Project Demonstration](#) video
+Here is our [Project Demonstration](https://www.loom.com/share/c03915a0540b414d9f4a969fdb6917a7) video
+
+Here is our [Project path](https://mymoneyfrenew.onrender.com/)
 
 
 ### Key Features <a name="key-features"></a>
@@ -137,7 +139,7 @@ rspec
 
 ## 🤝 Contributing <a name="contributing"></a>
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/ginabeki/Catalog-App/issues).
+Feel free to check the [issues page].
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
