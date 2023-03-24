@@ -90,4 +90,4 @@ gem 'turbolinks', '~> 5.2.0'
 
 gem 'aws-sdk-s3', require: false
 gem 'font-awesome-rails'
-gem 'webpacker', '~> 5.0'
+
