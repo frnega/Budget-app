@@ -128,8 +128,8 @@ rspec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **list food**
-- **list recipes**
+- **delete categories**
+- **delete transactions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
