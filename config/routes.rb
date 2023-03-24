@@ -1,15 +1,14 @@
-# frozen_string_literal: true
-
 Rails.application.routes.draw do
-  root 'home#index'
-
-  devise_scope :user do
-    # This block of code is mandatory for devise to support logout in rails 7
-    # Redirests signing out users back to sign-in
-    get 'users', to: 'devise/sessions#new'
-  end
-
   devise_for :users
-  resources 'groups', only: %w[new show create destroy]
-  resources 'trans', only: %w[new show create destroy]
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_scope :user do
+    authenticated :user do
+      root 'categories#index', as: :authenticated_root
+    end
+    unauthenticated do
+      root 'splash#home', as: :unauthenticated_root
+    end
+  end
+  resources :categories, only: [:index, :new, :create, :show]
+  resources :exchanges, only: [:new, :create]
 end
