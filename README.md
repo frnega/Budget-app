@@ -155,6 +155,7 @@ If you like this project kindly give it a star ⭐️
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for the project idea
+I would like to thank Gregoire Vella whose design was used for this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
