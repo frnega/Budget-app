@@ -1,9 +1,12 @@
-class CreateGroup < ActiveRecord::Migration[7.0]
+# frozen_string_literal: true
+
+class CreateGroups < ActiveRecord::Migration[7.0]
   def change
     create_table :groups do |t|
+      t.text :name
+      t.text :icon
       t.references :user, null: false, foreign_key: true
-      t.string :icon
-      t.string :name
+
       t.timestamps
     end
   end
