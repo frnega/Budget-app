@@ -13,7 +13,7 @@ RSpec.describe 'Splash', type: :request do
     end
 
     it 'checks if correct title is shown' do
-      expect(response.body).to include('TradeIt')
+      expect(response.body).to include('ManageMyMoney')
       expect(response.body).to include('SIGN UP')
       expect(response.body).to include('SIGN IN')
     end

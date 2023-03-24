@@ -18,7 +18,7 @@ RSpec.feature 'Category #Show', type: :feature do
   end
 
   scenario 'show Categories on page' do
-    expect(page).to have_content 'EXCHANGES'
+    expect(page).to have_content 'Transactions'
   end
 
   scenario 'display details of a category' do
@@ -35,6 +35,6 @@ RSpec.feature 'Category #Show', type: :feature do
   end
 
   scenario 'show Add A Category button on page' do
-    expect(page).to have_link 'Add An Exchange'
+    expect(page).to have_link 'Add A Transactions'
   end
 end
