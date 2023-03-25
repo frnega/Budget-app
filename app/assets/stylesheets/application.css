@@ -2,14 +2,102 @@
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
  *= require_self
  */
+
+/*
+*= require font-awesome
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('Proxima-Nova-Light.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('Proxima-Nova-Bold.ttf');
+}
+
+body {
+  font-family: 'ProximaNovaLight', sans-serif;
+}
+
+.pg-title {
+  font-family: 'ProximalNovaBold', sans-serif;
+}
+
+#cover {
+  transition: 400ms;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-image: linear-gradient(to top, #f4f4f7d0, #f4f4f7d0, #f4f4f7d0, #f4f4f7d0, #f4f4f7d0);
+}
+
+#cover-caption {
+  z-index: 1;
+}
+
+#cover h1 {
+  font-family: 'Lobster', cursive;
+  color: var(--gray);
+  font-weight: 400;
+  padding-top: 35%;
+}
+
+.splash-form {
+  margin-top: 55%;
+}
+
+.category-image {
+  width: 60px;
+  height: 60px;
+}
+
+.no-category {
+  height: 35vh;
+}
+
+select {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+option {
+  padding: 8px 5px;
+  border-bottom: 1px solid var(--blue);
+  margin: 5px;
+  overflow: scroll;
+}
+
+.space {
+  padding-bottom: 120px;
+}
+
+.bg-primary {
+  background-color: #3778c2 !important;
+}
+
+.bg-success {
+  background-color: #5fb523 !important;
+}

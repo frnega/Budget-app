@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  unauthenticated do
-    root "users#home"
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_scope :user do
+    authenticated :user do
+      root 'categories#index', as: :authenticated_root
+    end
+    unauthenticated do
+      root 'splash#home', as: :unauthenticated_root
+    end
   end
-
-  root "groups#index", as: "entity"
-
-  resources :groups, only: [:new, :show, :create] do
-    resources :entities, only: [:new, :show, :create]
-  end
+  resources :categories, only: [:index, :new, :create, :show]
+  resources :exchanges, only: [:new, :create]
 end
