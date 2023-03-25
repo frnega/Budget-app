@@ -20,7 +20,7 @@ RSpec.feature 'SignUp', type: :feature do
   context 'Form Submission' do
     scenario 'Submit form without email' do
       within 'form' do
-        fill_in 'Full Name', with: 'Dammy Shittu'
+        fill_in 'Full Name', with: 'FRE NEGA'
         fill_in 'Password(6 characters minimum)', with: '123456'
         fill_in 'Confirm Password', with: '123456'
       end
@@ -40,7 +40,7 @@ RSpec.feature 'SignUp', type: :feature do
 
     scenario 'Submit form without password' do
       within 'form' do
-        fill_in 'Full Name', with: 'Dammy Shittu'
+        fill_in 'Full Name', with: 'FRE NEGA'
         fill_in 'Email', with: 'admin@admin20.com'
       end
       click_button 'Next'
