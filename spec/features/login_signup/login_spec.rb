@@ -15,6 +15,5 @@ RSpec.feature 'Logins', type: :feature do
 
   scenario 'has sign up link' do
     expect(page).to have_link('Sign Up')
-  end  
   end
 end
