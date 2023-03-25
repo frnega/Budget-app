@@ -1,5 +1,4 @@
 require 'rails_helper'
-# rubocop:disable Metrics/BlockLength
 RSpec.feature 'SignUp', type: :feature do
   background { visit new_user_registration_path }
   scenario 'has necessary fields' do
@@ -47,6 +46,4 @@ RSpec.feature 'SignUp', type: :feature do
       expect(page).to have_content "Password can't be blank"
     end
   end
-
-  # rubocop:enable Metrics/BlockLength
 end
