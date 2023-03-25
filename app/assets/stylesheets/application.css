@@ -51,7 +51,7 @@ body {
   margin-bottom: 100px;
   margin-right: 10px;
   margin-left: 10px;
-  background-image: linear-gradient(to top, #f4f4f7d0, #f4f4f7d0, #f4f4f7d0, #f4f4f7d0, #f4f4f7d0); 
+  background-image: linear-gradient(to top, #f4f4f7d0, #f4f4f7d0, #f4f4f7d0, #f4f4f7d0, #f4f4f7d0);
 }
 
 #cover-caption {
@@ -95,10 +95,9 @@ option {
 }
 
 .bg-primary {
-  background-color: #3778c2!important;
+  background-color: #3778c2 !important;
 }
 
 .bg-success {
-  background-color: #5fb523!important;
+  background-color: #5fb523 !important;
 }
-
