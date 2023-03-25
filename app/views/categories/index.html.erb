@@ -3,7 +3,9 @@
     <div class="container py-1 px-3 d-flex justify-content-between align-items-center">
     <div></div>
     <h1 class="fs-6 fw-normal text-white pt-2 pg-title">CATEGORIES</h1>
-    <small><%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: "text-white text-decoration-none bg-transparent border-0 fw-normal" %></small>
+    <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "text-white text-decoration-none" %>
+
+
     </div>
   </nav>
 </header>
